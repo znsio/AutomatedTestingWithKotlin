@@ -14,7 +14,8 @@ object Logger {
         logRepo.upsert(log)
     }
 
-    private fun createLogModel(type: String, tag: String, msg: String, tr: Throwable?) = LogModel(0, type, tag, msg, if (tr != null) tr.message + "\n" + tr?.stackTrace.contentToString() else null)
+    private fun createLogModel(type: String, tag: String, msg: String, tr: Throwable?) =
+        LogModel(0, type, tag, msg, if (tr != null) tr.message + "\n" + tr?.stackTrace.contentToString() else null)
 
     fun setLogRepo(logRepo: LogRepository) {
         this.logRepo = logRepo

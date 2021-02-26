@@ -22,7 +22,7 @@ class LoggerTest {
 
 
     @Test
-    fun `log i failed`() {
+    fun `log i called once`() {
 
 // When
         Logger.i("Test", "Test1")

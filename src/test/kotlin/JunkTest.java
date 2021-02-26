@@ -2,21 +2,26 @@ import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
 
+import static org.junit.Assert.*;
 
 public class JunkTest {
-    private double LATITUDE = 42.020785;
-    private double LONGITUDE = -93.650716;
 
     @Mock
     private String geocoderTest;
 
     @Before
     public void setUp(){
-        //geocoderTest = new Geocoder(this, Locale.getDefault());
+        //no-op
     }
 
     @Test
     public void testGeocoder(){
-
+        assertTrue(true);
     }
+
+    @Test
+    public void initTest() {
+        assertTrue(true);
+    }
+
 }
